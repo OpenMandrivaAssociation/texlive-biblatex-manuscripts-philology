@@ -1,11 +1,11 @@
-# revision 32761
+# revision 33195
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-manuscripts-philology
-# catalog-date 2014-01-22 10:46:49 +0100
+# catalog-date 2014-03-15 23:38:06 +0100
 # catalog-license lppl1.3
-# catalog-version 1.0.0
+# catalog-version 1.1
 Name:		texlive-biblatex-manuscripts-philology
-Version:	1.0.0
+Version:	1.1.0
 Release:	1
 Summary:	Manage classical manuscripts with biblatex
 Group:		Publishing
