@@ -6,7 +6,7 @@
 # catalog-version 1.1
 Name:		texlive-biblatex-manuscripts-philology
 Version:	1.1.0
-Release:	4
+Release:	5
 Summary:	Manage classical manuscripts with biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-manuscripts-philology
