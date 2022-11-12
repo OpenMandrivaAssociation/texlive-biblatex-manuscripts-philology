@@ -5,8 +5,8 @@ Summary:	Manage classical manuscripts with biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-manuscripts-philology
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-manuscripts-philology.r53344.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-manuscripts-philology.doc.r53344.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-manuscripts-philology.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-manuscripts-philology.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
