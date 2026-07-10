@@ -1,41 +1,23 @@
-Name:		texlive-biblatex-manuscripts-philology
-Version:	66977
-Release:	1
-Summary:	Manage classical manuscripts with biblatex
+%global tl_name biblatex-manuscripts-philology
+%global tl_revision 66977
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	2.1.4
+Release:	%{tl_revision}.1
+Summary:	Manage classical manuscripts with BibLaTeX
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-manuscripts-philology
-License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-manuscripts-philology.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-manuscripts-philology.doc.r%{version}.tar.xz
+License:	lppl1.3
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-manuscripts-philology.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-manuscripts-philology.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+%texlive_base_requires
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The package adds a new entry type: @manuscript to manage
-manuscript in classical philology, for example to prepare a
-critical edition.
+The package adds a new entry type: @manuscript to manage manuscript in
+classical philology, for example to prepare a critical edition.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/biblatex-manuscripts-philology
-%doc %{_texmfdistdir}/doc/latex/biblatex-manuscripts-philology
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc %{buildroot}%{_texmfdistdir}
